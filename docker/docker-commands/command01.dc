@@ -1,1 +1,1 @@
-docker container create --name 01container alpine:3.12
+docker container create -t --name 01container alpine:3.12
