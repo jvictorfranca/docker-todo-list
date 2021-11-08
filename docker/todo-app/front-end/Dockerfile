@@ -5,6 +5,6 @@ COPY package.json ./
 COPY . .
 ADD /node_modules.tar.gz .
 
-ENTRYPOINT [ "npm" , 'start']
+ENTRYPOINT [ "npm" , "start"]
 
 #RUN npm run build

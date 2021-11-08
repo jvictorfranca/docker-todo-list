@@ -4,9 +4,8 @@ EXPOSE 3001
 COPY package.json ./
 COPY . .
 ADD /node_modules.tar.gz .
-ENTRYPOINT [ "npm" ]
+ENTRYPOINT [ "npm", "start" ]
 #RUN npm run build
-CMD ['start']
 
 
 # FROM node:14-alpine
