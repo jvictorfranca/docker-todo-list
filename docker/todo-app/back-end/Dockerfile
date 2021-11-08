@@ -1,11 +1,10 @@
 FROM node:14-alpine
 WORKDIR /docker/todo-app/back-end
 EXPOSE 3001
-COPY package*.json ./
+COPY package.json ./
+COPY . .
 ADD /node_modules.tar.gz .
 ENTRYPOINT [ "npm" ]
-CMD ['install']
-COPY . .
 #RUN npm run build
 CMD ['start']
 
