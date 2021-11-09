@@ -13,7 +13,7 @@ services:
     image: todobackend
     ports:
       - 3001:3001
-  tests:
+  todotests:
     image: todotests
     depends_on:
       - "front"
